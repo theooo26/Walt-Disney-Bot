@@ -19,9 +19,8 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'aide') {
-    	message.channel.send('```Voici la liste des commandes possibles```');
-    	message.channel.send('ping```');
-  	}
+    	message.channel.send("some text", {
+        file: "http://universparks.esy.es/wp-content/uploads/2017/05/Sans-titre.png" // Or replace with FileOptions object
 });
 
 // THIS  MUST  BE  THIS  WAY
