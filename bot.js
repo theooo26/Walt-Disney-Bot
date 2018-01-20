@@ -18,7 +18,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === '/help') {
+    if (message.content === 'help') {
     	message.channel.send('```**Voici la liste des commandes possibles**```');
   	}
 });
