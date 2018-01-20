@@ -21,6 +21,7 @@ client.on('message', message => {
     if (message.content === 'aide') {
     	message.channel.send("some text", {
         file: "http://universparks.esy.es/wp-content/uploads/2017/05/Sans-titre.png" // Or replace with FileOptions object
+  	}
 });
 
 // THIS  MUST  BE  THIS  WAY
