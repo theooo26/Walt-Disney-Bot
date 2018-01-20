@@ -19,8 +19,9 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'help') {
-    	message.channel.send('```**Voici la liste des commandes possibles**```');
+    	message.channel.send('```Voici la liste des commandes possibles```');
   	}
 });
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
