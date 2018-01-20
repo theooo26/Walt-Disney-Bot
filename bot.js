@@ -19,10 +19,15 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'aide') {
-    	message.channel.send("some text", {
-        file: "http://universparks.esy.es/wp-content/uploads/2017/05/Sans-titre.png" // Or replace with FileOptions object
-  	}
-});
+    	 message.channel.sendMessage({
+        "embed": {
+                title: 'Buienradar',
+                url: 'http://www.buienradar.nl/',
+                "image": {
+                "url": "http://api.buienradar.nl/image/1.0/RadarMapNL?a=.gif",
+                }
+            }
+        });
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
